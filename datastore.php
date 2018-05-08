@@ -10,13 +10,17 @@
 			$lastName = $_POST['last_name'];
 			$age = $_POST['age'];
 			$sex = $_POST['sex'];
-			$cpga = $_POST['cgpa'];
+			$userMarks = $_POST['user_marks'];
+			$userAddress = $_POST['userAdd'];
 
-			echo $firstName;
-			echo $lastName;
-			echo $age;
-			echo $sex;
-			echo $cgpa;
+			echo $firstName . "<br />";
+			echo $lastName . "<br />";
+			echo $age . "<br />";
+			echo $sex . "<br />";
+			echo "<b>You got : </b>";
+			echo $userMarks . "<br />";
+			echo "Your address : ";
+			echo $userAddress . "<br />";
 		?>
 	</body>
 </html>
