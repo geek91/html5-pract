@@ -6,21 +6,25 @@
 
 	<body>
 		<?php
-			$firstName = $_POST['first_name'];
-			$lastName = $_POST['last_name'];
-			$age = $_POST['age'];
-			$sex = $_POST['sex'];
-			$userMarks = $_POST['user_marks'];
-			$userAddress = $_POST['userAdd'];
+			
+			echo "<p>Data Processed</p>";
 
-			echo $firstName . "<br />";
-			echo $lastName . "<br />";
-			echo $age . "<br />";
-			echo $sex . "<br />";
-			echo "<b>You got : </b>";
-			echo $userMarks . "<br />";
-			echo "Your address : ";
-			echo $userAddress . "<br />";
+			date_default_timezone_set('UTC');
+			/*Echos the date 
+				h : 12 hr format 
+				H : 24 hr format
+				i : Minutes 
+				s : Seconds 
+				u : Microseconds
+				a : Lowercase am or pm 
+				l : Full text for the day 
+				F : Full text for the month 
+				j : Day of the months 
+				S : Suffix for the day st, nd, rd, etc 
+				Y : 4 digit Y
+
+				*/
+			echo date('h:i:s:u a, l F jS Y e');
 		?>
 	</body>
 </html>
